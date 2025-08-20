@@ -1,0 +1,93 @@
+Column	Description
+_id	
+Unique row identifier for Open Data database
+
+BranchCode	
+A code identifying the TPL branch.
+
+PhysicalBranch	
+Library branches with fixed locations are set to 1. Other TPL services and collections are set to 0.
+
+BranchName	
+The name of the library branch.
+
+Address	
+The full address of the branch.
+
+PostalCode	
+The branch postal code.
+
+Website	
+The branch website.
+
+Telephone	
+The phone number for the branch.
+
+SquareFootage	
+The total size of the branch in square feet.
+
+PublicParking	
+The number of parking spaces available for the public. If a branch does not have any public parking spaces, this field is set to 0. If a branch shares parking spaces with another location (community centre, mall, etc.), this field is set to “shared”.
+
+KidsStop	
+This field denotes the presence of a KidsStop (1 for present, 0 for not present). KidsStops are learning and reading spaces created for parents and young children.
+
+LeadingReading	
+This field denotes the presence of the Leading To Reading service (1 for present, 0 for not present). Leading to Reading is a free service for children to receive one-on-one help and encouragement with their reading and writing skills.
+
+CLC	
+This field denotes the presence of a Computer Learning Centre (1 for present, 0 for not present). CLCs are computer labs that offer hands-on technology classes.
+
+DIH	
+This field denotes the presence of a Digital Innovation Hub (1 for present, 0 for not present). DIHs are learning and creation spaces with computers, professional software, and a wide variety of equipment, including 3D printers, audio and video production tools, Arduinos, and more.
+
+TeenCouncil	
+This field denotes the presence of a Teen Council (1 for present, 0 for not present). Teen Councils are groups of teens that attend monthly meetings with library staff, collaborate on group projects, and work to benefit their libraries and communities.
+
+YouthHub	
+This field denotes the presence of a Youth Hub (1 for present, 0 for not present). Youth Hubs are drop-in spaces where teens can study, chat with friends, use technology, or take part in activities such as arts and crafts and gaming.
+
+AdultLiteracyProgram	
+This field denotes the presence of the Adult Literacy Program service (1 for present, 0 for not present). The Adult Literacy Program offers free, one-on-one tutoring in basic reading, writing, and math for English-speaking adults 19 years or older (exceptions may apply)
+
+Workstations	
+A count of computers with internet access available for public use in the branch.
+
+ServiceTier	
+Service tier refers to the scope and scale of the branch/service.
+
+NL - Neighbourhood branches provide collections and services that meet many of the needs of the immediate community. Bookmobiles and Home Library Service are part of the NL service tier.
+
+DL - District branches offer extensive informational and recreational collections, as well as services that meet the needs of the immediate community and the larger district.
+
+RR - Research and reference branches provide comprehensive and specialized collections, as well asservices with an emphasis on access.
+
+RA - Remote access offers self-serve systems (online and by phone).
+
+OT - Other service activities.
+
+For more information, please refer to Toronto Public Library’s Service Delivery Model
+
+Lat	
+The latitude coordinate of the branch.
+
+Long	
+The longitude coordinate of the branch.
+
+NBHDNo	
+The ID number of the neighbourhood associated with the branch. Neighbourhood boundaries are designated by the City of Toronto. For more details, please refer to this website
+
+NBHDName	
+The name of a neighbourhood.
+
+TPLNIA	
+This field denotes whether the branch serves a neighbourhood improvement area (1 for yes, 0 for no). A branch serving a NIA may be located inside its boundaries or nearby. NIAs are designated by the City of Toronto. For more details, please refer to this website
+
+WardNo	
+The ID of the municipal ward associated with the branch.
+
+WardName	
+The name of the municipal ward.
+
+PresentSiteYear	
+The year that the present location of the branch was officially opened to the general public.
