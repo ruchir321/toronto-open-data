@@ -5,23 +5,31 @@ import re
 from datetime import datetime
 import pydeck as pdk
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+cwd = os.environ["REPO_ROOT"]
+os.chdir(cwd)
+
+
 st.set_page_config(layout="wide")
 
 st.title("Toronto Public Library Analytics")
 
 @st.cache_data
 def load_data():
-    branch_info = pd.read_csv("/home/ruchirich/Documents/repositories/toronto-open-data/tpl/data/library-branch-general-information.csv")
-    circulation = pd.read_csv("/home/ruchirich/Documents/repositories/toronto-open-data/tpl/data/library-circulation.csv").drop(columns=["_id"])
-    visits = pd.read_csv("/home/ruchirich/Documents/repositories/toronto-open-data/tpl/data/library-visits.csv").drop(columns=["_id"])
-    registrations = pd.read_csv("/home/ruchirich/Documents/repositories/toronto-open-data/tpl/data/library-card-registrations.csv").drop(columns=["_id"])
-    workstation_usage = pd.read_csv("/home/ruchirich/Documents/repositories/toronto-open-data/tpl/data/library-workstation-usage.csv").drop(columns=["_id"])
-    events = pd.read_csv("/home/ruchirich/Documents/repositories/toronto-open-data/tpl/data/library-branch-programs-and-events-feed.csv").drop(columns=["_id"])
+    branch_info = pd.read_csv("data/library-branch-general-information.csv")
+    circulation = pd.read_csv("data/library-circulation.csv").drop(columns=["_id"])
+    visits = pd.read_csv("data/library-visits.csv").drop(columns=["_id"])
+    registrations = pd.read_csv("data/library-card-registrations.csv").drop(columns=["_id"])
+    sessions = pd.read_csv("data/library-workstation-usage.csv").drop(columns=["_id"])
+    events = pd.read_csv("data/library-branch-programs-and-events-feed.csv").drop(columns=["_id"])
 
     # Merge dataframes
     usage_data = (circulation.merge(visits, on=["Year", "BranchCode"])
                   .merge(registrations, on=["Year", "BranchCode"])
-                  .merge(workstation_usage, on=["Year", "BranchCode"]))
+                  .merge(sessions, on=["Year", "BranchCode"]))
 
     full_data = usage_data.merge(branch_info, on="BranchCode")
     
