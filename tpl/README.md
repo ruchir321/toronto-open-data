@@ -17,3 +17,8 @@ Code:
 - Regression Analysis
 - Binary Classifier
 - Streamlit Dashboard
+
+WIP:
+
+- events.ipynb
+  - Prepare NLP pipeline
