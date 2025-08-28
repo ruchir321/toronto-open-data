@@ -4,6 +4,7 @@ Data:
 
 - merged_data.csv
 - cleaned_events.csv
+- branch_info.csv
 - library-branch-programs-and-events-feed.csv  
 - library-circulation.csv  
 - library-workstation-usage.csv
@@ -21,4 +22,9 @@ Code:
 WIP:
 
 - events.ipynb
+  - Events Count feature analysis
   - Prepare NLP pipeline
+    - Clean descriptions
+    - Tokenization
+    - Semantic Analysis
+    - `Description` wordcloud
