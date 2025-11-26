@@ -77,7 +77,7 @@ def analyze_crime(crime_path, neighborhood_name):
             row = hood_data.iloc[0]
             stats = {}
             for col in df.columns:
-                if '2023' in col and col not in ['POPULATION_2023', 'AREA_NAME']:
+                if '2023' in col and col not in ['POPULATION_2024', 'AREA_NAME']: # The model hallucinated the column name "POPULATION_2023". The table actually has "POPULATION_2024"
                     stats[col] = row[col]
             return stats
         else:
