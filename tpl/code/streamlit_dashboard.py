@@ -19,12 +19,12 @@ st.title("Toronto Public Library Analytics")
 
 @st.cache_data
 def load_data():
-    branch_info = pd.read_csv("data/library-branch-general-information.csv")
-    circulation = pd.read_csv("data/library-circulation.csv").drop(columns=["_id"])
-    visits = pd.read_csv("data/library-visits.csv").drop(columns=["_id"])
-    registrations = pd.read_csv("data/library-card-registrations.csv").drop(columns=["_id"])
-    sessions = pd.read_csv("data/library-workstation-usage.csv").drop(columns=["_id"])
-    events = pd.read_csv("data/library-branch-programs-and-events-feed.csv").drop(columns=["_id"])
+    branch_info = pd.read_csv("../data/library-branch-general-information.csv")
+    circulation = pd.read_csv("../data/library-circulation.csv").drop(columns=["_id"])
+    visits = pd.read_csv("../data/library-visits.csv").drop(columns=["_id"])
+    registrations = pd.read_csv("../data/library-card-registrations.csv").drop(columns=["_id"])
+    sessions = pd.read_csv("../data/library-workstation-usage.csv").drop(columns=["_id"])
+    events = pd.read_csv("../data/library-branch-programs-and-events-feed.csv").drop(columns=["_id"])
 
     # Merge dataframes
     usage_data = (circulation.merge(visits, on=["Year", "BranchCode"])

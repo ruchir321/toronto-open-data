@@ -1,9 +1,10 @@
-# Short Term Rentals Analysis
+# Toronto Bikeshare Analysis
 
-Analysis of short-term rental registrations and trends in Toronto.
+Exploratory Data Analysis (EDA) and visualization of the Toronto Bikeshare ridership data.
 
 ## Code Used
-- `notebook.ipynb`
+- `eda.ipynb`
+- `streamlit-demo.py`
 
 ## Data Used
 - No data files found locally (data may be fetched dynamically).
@@ -19,6 +20,5 @@ Analysis of short-term rental registrations and trends in Toronto.
    ```bash
    cd code
    # Example:
-   # Start Jupyter Lab/Notebook to view .ipynb files
-   jupyter lab
+   python streamlit-demo.py
    ```

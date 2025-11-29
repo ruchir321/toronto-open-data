@@ -132,4 +132,4 @@ def analyze_rainfall(file_path):
              print(f"Average of all stations: {sum(station_totals)/len(station_totals):.2f} mm")
 
 if __name__ == "__main__":
-    analyze_rainfall("data/precipitation-data-2024.csv")
+    analyze_rainfall("../data/precipitation-data-2024.csv")

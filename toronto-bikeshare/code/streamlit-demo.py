@@ -13,7 +13,7 @@ DISPLAY_COLS = ['station_id', 'num_bikes_available', 'mechanical', 'ebike' ]
 
 @st.cache_data
 def get_data() -> pd.DataFrame:
-    df = pd.read_csv("data/stations.csv")
+    df = pd.read_csv("../data/stations.csv")
     df = df[DISPLAY_COLS]
     return df
 

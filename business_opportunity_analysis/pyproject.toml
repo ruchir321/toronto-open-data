@@ -1,0 +1,23 @@
+[project]
+name = "business-opportunity-analysis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "folium>=0.20.0",
+    "geopandas>=1.1.1",
+    "geopy>=2.4.1",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.7",
+    "numpy>=2.3.5",
+    "openpyxl>=3.1.5",
+    "pandas>=2.3.3",
+    "pgeocode>=0.5.0",
+    "plotly>=6.5.0",
+    "scikit-learn>=1.7.2",
+    "seaborn>=0.13.2",
+    "shapely>=2.1.2",
+    "streamlit>=1.51.0",
+    "streamlit-folium>=0.25.3",
+]

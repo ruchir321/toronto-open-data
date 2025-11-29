@@ -1,13 +1,13 @@
-# Toronto Signature Sites
+# Toronto Business Licenses
 
-Investigation into Toronto's signature sites and attractions.
+Analysis of business licenses issued by the City of Toronto, broken down by wards and categories.
 
 ## Code Used
 - `notebook.ipynb`
+- `TO-wards-DE.ipynb`
 
 ## Data Used
-- `resource_dump_0.csv`
-- `resource_metadata_1.json`
+- No data files found locally (data may be fetched dynamically).
 
 ## How to Run
 1. **Initialize Environment**:
